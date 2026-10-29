@@ -9,7 +9,16 @@
     btn.addEventListener('click', function () {
       var open = document.body.classList.toggle('nav-open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        var first = document.querySelector('.site-nav a');
+        if (first) first.focus();
+      }
     });
+    // Close the menu if the screen widens past the phone layout (rotation, resize).
+    var wide = window.matchMedia('(min-width: 961px)');
+    var onWide = function (e) { if (e.matches) closeMenu(); };
+    if (wide.addEventListener) wide.addEventListener('change', onWide);
+    else if (wide.addListener) wide.addListener(onWide);
     document.querySelectorAll('.site-nav a').forEach(function (a) {
       a.addEventListener('click', closeMenu);
     });
