@@ -1,0 +1,77 @@
+WELLSPRING WEBSITE UPDATE
+Prepared November 4, 2026
+
+This update is designed for the EXISTING static GitHub Pages site:
+  https://github.com/alyssawellspring208/Wellspring-Website
+
+No changes have been published to GitHub or the live website.
+
+WHAT CHANGED
+- Replaces the spa-style homepage hero with a science and clinical care photograph.
+- Replaces the wellness-lounge image with a close-up clinical consultation photo.
+- Adds Randy Beckham, Dr. Don Reiff (white background), and Layla Beverly
+  portraits to the homepage leadership list and the About biographies.
+- Changes Randy's public email to livewell@wellspringhealthclinic.com in
+  the site-wide header/topbar, footer, homepage FAQ, and Privacy page.
+- Makes the existing waitlist form submit via FormSubmit AJAX to the shared inbox.
+  Fields stay limited to name, email, and location. The form shows distinct
+  submitted, activation-pending, and error states.
+- Updates the displayed privacy notice to name the form service.
+- Keeps the existing colors, navigation, page structure, and other copy intact.
+
+FILES TO UPLOAD
+Replace:
+  assets/js/main.js
+
+Add these five files:
+  assets/img/hero-clinical.webp
+  assets/img/clinical-testing.webp
+  assets/img/team-randy.webp
+  assets/img/team-don.webp
+  assets/img/team-layla.webp
+
+INSTRUCTIONS
+1. Download and unzip the package. Do NOT upload this ZIP as a single file to
+   GitHub. The files within the assets directory must go into the corresponding
+   assets folders of your existing repository.
+2. On the Wellspring-Website repository, select main, then open assets/js.
+   Replace the existing main.js with the one in this package and commit it.
+3. Open assets/img. Upload the five .webp images from this package and commit.
+4. Give GitHub Pages time to deploy, then open wellspringwellnessgroup.com and
+   refresh with Command+Shift+R (Mac) or Control+Shift+R (Windows).
+5. Check the homepage, About page, top header, footer, and mobile view.
+
+IMPORTANT: COMPLETE THE ONE-TIME FORM ACTIVATION
+The static website does not have its own server. The form uses FormSubmit.co,
+which emails new signups to livewell@wellspringhealthclinic.com. The email
+address MUST already be able to receive mail.
+
+- After the update has deployed, submit one sample name, email and location on
+  the live page (do not submit medical information). This triggers an activation
+  message from FormSubmit to the WellSpring inbox.
+- Open livewell@wellspringhealthclinic.com and follow FormSubmit's activation
+  email instructions. Check the spam folder if needed.
+- Submit a second test entry from the live site and verify that it arrives in
+  the inbox. Remove any test entries from the list you maintain.
+- The form cannot be considered live and verified until activation succeeds and
+  the inbox actually receives a test entry.
+
+FORM PRIVACY NOTE
+FormSubmit is a third-party service for general contact and waitlist forms.
+It has not been established that this service meets HIPAA requirements. Do not
+add fields requesting diagnoses, symptoms, dates of birth, or other medical
+information. Consider a dedicated consent-based CRM/email platform for future
+campaigns or larger waitlists.
+
+TECHNICAL NOTE
+This is a small replacement-asset update, NOT a replacement for the whole
+repository. The unchanged HTML pages already load assets/js/main.js. The new
+script updates selected page content and photography when each page loads, so
+there is no need to replace all your existing HTML files. The original source
+HTML is left unchanged and would still contain the older email until JS runs.
+For SEO or no-JavaScript visitors, you may later want to also replace the
+older email strings in the source HTML files.
+
+If the new images do not appear, check that ALL five photos are named exactly
+as shown above and uploaded to assets/img, and make sure assets/js/main.js was
+replaced in assets/js rather than added elsewhere.
