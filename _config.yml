@@ -10,3 +10,12 @@ defaults:
       type: posts
     values:
       layout: journal_post
+
+# Old update-kit folders contained duplicate copies of the published article drafts.
+# Keep those folders in GitHub if desired, but prevent Jekyll from publishing them.
+exclude:
+  - site_additions
+  - WellSpring_website_update_kit
+  - apply_updates.py
+  - run_update.command
+  - READ_ME_FIRST.txt
