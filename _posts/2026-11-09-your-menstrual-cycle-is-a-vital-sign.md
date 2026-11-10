@@ -5,8 +5,8 @@ date: 2026-11-09
 category: "Women's Health"
 author: "Alyssa Blackson"
 summary: "Menstrual patterns can offer useful information about hormonal and reproductive health. Here's what to notice and when to seek care."
-image: "/assets/img/hero-clinical.webp"
-image_alt: "A healthcare consultation focused on long-term wellness"
+image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1400&q=70"
+image_alt: "A young woman reading in a calm wellness setting"
 ---
 
 For many young women, their menstrual cycle is something they learn to manage without fully understanding. Painful periods, irregular cycles, and hormonal symptoms often become part of their routine. Over time, they may begin to accept these experiences as normal without knowing what their bodies are communicating.
