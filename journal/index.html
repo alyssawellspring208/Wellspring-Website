@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -37,13 +40,22 @@
 </div></header><section class="page-hero" style="--img:url('https://images.unsplash.com/photo-1761092409160-590d57eb0aaf?auto=format&fit=crop&w=2000&q=70')">
 <div class="wrap">
 <h1>Journal</h1>
-<p class="lede">Research-backed notes on midlife health and longevity.</p>
+<p class="lede">Research and practical perspectives on long-term health and wellness.</p>
 </div>
 </section>
 </div>
 <main id="main">
 <section class="band on-cream">
-<div class="wrap posts"><article class="post-card"><a class="card-link" href="../journal/womens-health-gap/index.html">
+<div class="wrap posts">
+{% for post in site.posts %}
+<article class="post-card"><a class="card-link" href="{{ post.url | relative_url }}">
+{% if post.image %}<div class="photo" role="img" aria-label="{{ post.image_alt | default: post.title | escape }}" style="--img:url('{{ post.image | escape }}')"></div>{% endif %}
+<p class="meta">{{ post.date | date: '%B %-d, %Y' }}{% if post.author %} | By {{ post.author | escape }}{% endif %}</p>
+<h3>{{ post.title | escape }}</h3>
+<p class="muted">{{ post.summary | escape }}</p>
+</a></article>
+{% endfor %}
+<article class="post-card"><a class="card-link" href="../journal/womens-health-gap/index.html">
 <div class="photo" role="img" aria-label="A smiling woman in a gray cardigan" style="--img:url('https://images.unsplash.com/photo-1616286608358-0e1b143f7d2f?auto=format&fit=crop&w=1400&q=70')"></div>
 <p class="meta">October 28, 2026. 4 min read</p>
 <h3>The women's health gap starts in the mid-30s</h3>

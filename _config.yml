@@ -1,0 +1,12 @@
+title: WellSpring Health & Wellness
+url: https://wellspringwellnessgroup.com
+baseurl: ""
+timezone: America/Chicago
+permalink: /journal/:title/
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: journal_post
