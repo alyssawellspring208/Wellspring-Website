@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ page.title | escape }} | WellSpring Journal</title>
+<meta name="description" content="{{ page.summary | escape }}">
+<meta property="og:title" content="{{ page.title | escape }} | WellSpring Journal">
+<meta property="og:description" content="{{ page.summary | escape }}">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#0B4450">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/img/mark.svg' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&amp;family=Mrs+Saint+Delafield&amp;display=swap">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar"><div class="wrap topbar-in">
+<span>Coming soon to Pensacola, FL and Birmingham, AL</span>
+<a href="mailto:livewell@wellspringhealthclinic.com">livewell@wellspringhealthclinic.com</a>
+</div></div>
+<div class="stage">
+<header class="site-header"><div class="wrap header-in">
+<a class="brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="WellSpring Health &amp; Wellness, home" width="150" height="65"></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr">Menu</span></button>
+<nav id="site-nav" class="site-nav" aria-label="Main">
+<a href="{{ '/about/' | relative_url }}">About</a>
+<a href="{{ '/services/' | relative_url }}">Services</a>
+<a href="{{ '/research/' | relative_url }}">Research</a>
+<a href="{{ '/journal/' | relative_url }}" aria-current="page">Journal</a>
+<a class="btn btn-primary btn-sm" href="{{ '/#waitlist' | relative_url }}">Join the waitlist</a>
+</nav></div></header>
+<section class="page-hero" style="--img:url('https://images.unsplash.com/photo-1761092409160-590d57eb0aaf?auto=format&amp;fit=crop&amp;w=2000&amp;q=70')">
+<div class="wrap">
+<h1>{{ page.title | escape }}</h1>
+<p class="lede">{{ page.date | date: '%B %-d, %Y' }}{% if page.category %} | {{ page.category | escape }}{% endif %}</p>
+</div></section></div>
+<main id="main">
+<section class="band on-cream">
+<article class="wrap article">
+{% if page.image %}
+<div class="photo" role="img" aria-label="{{ page.image_alt | default: page.title | escape }}" style="--img:url('{{ page.image | escape }}')"></div>
+{% endif %}
+{% if page.author %}<p class="meta">By {{ page.author | escape }}</p>{% endif %}
+{{ content }}
+<div class="actions left"><a class="btn btn-primary" href="{{ '/#waitlist' | relative_url }}">Join the waitlist</a><a class="btn btn-dark" href="{{ '/services/' | relative_url }}">Explore our services</a></div>
+<p class="disclaimer">Information in this post is general and is not medical advice. Talk with a licensed clinician about your own health.</p>
+<p><a href="{{ '/journal/' | relative_url }}">Back to the journal</a></p>
+</article>
+</section></main>
+<footer class="site-footer"><svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,46 C220,88 520,8 760,34 C1000,60 1220,20 1440,42 L1440,80 L0,80 Z"/></svg>
+<div class="wrap"><div class="foot-grid">
+<div><img src="{{ '/assets/img/logo-white.png' | relative_url }}" alt="WellSpring Health &amp; Wellness" width="170" height="73"><p>Live Well. Age Strong. Thrive Longer.</p></div>
+<div><h3>Locations</h3><ul><li>Pensacola, Florida</li><li>Birmingham, Alabama</li><li>Opening soon</li></ul></div>
+<div><h3>Contact</h3><ul><li><a href="mailto:livewell@wellspringhealthclinic.com">livewell@wellspringhealthclinic.com</a></li><li><a href="{{ '/#waitlist' | relative_url }}">Join the waitlist</a></li></ul></div>
+<div><h3>Pages</h3><ul>
+<li><a href="{{ '/about/' | relative_url }}">About</a></li>
+<li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+<li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+<li><a href="{{ '/journal/' | relative_url }}">Journal</a></li>
+<li><a href="{{ '/privacy/' | relative_url }}">Privacy</a></li>
+</ul></div></div>
+<div class="foot-bottom"><p>Information on this site is general and is not medical advice. WellSpring services require an evaluation by a licensed clinician, and results vary by person.</p><p>&copy; 2026 WellSpring Wellness, LLC. All Rights Reserved.</p></div>
+</div></footer>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
