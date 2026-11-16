@@ -7,9 +7,9 @@ layout: null
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Journal | WellSpring Health &amp; Wellness</title>
-<meta name="description" content="Research-backed notes on midlife health and longevity from WellSpring.">
+<meta name="description" content="Research-informed articles on women's and men's health from WellSpring.">
 <meta property="og:title" content="Journal | WellSpring Health &amp; Wellness">
-<meta property="og:description" content="Research-backed notes on midlife health and longevity from WellSpring.">
+<meta property="og:description" content="Research-informed articles on women's and men's health from WellSpring.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0B4450">
 <link rel="icon" type="image/svg+xml" href="../assets/img/mark.svg">
@@ -23,7 +23,7 @@ layout: null
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="topbar"><div class="wrap topbar-in">
-<span>Coming soon to Pensacola, FL and Birmingham, AL</span>
+<span>Coming soon: Pensacola, Birmingham, Doral &amp; Coral Gables</span>
 <a href="mailto:randy@wellspringhealthclinic.com">randy@wellspringhealthclinic.com</a>
 </div></div>
 <div class="stage">
@@ -37,44 +37,36 @@ layout: null
 <a href="../journal/index.html" aria-current="page">Journal</a>
 <a class="btn btn-primary btn-sm" href="../index.html#waitlist">Join the waitlist</a>
 </nav>
-</div></header><section class="page-hero" style="--img:url('https://images.unsplash.com/photo-1761092409160-590d57eb0aaf?auto=format&fit=crop&w=2000&q=70')">
+</div></header>
+<section class="page-hero" style="--img:url('https://images.unsplash.com/photo-1761092409160-590d57eb0aaf?auto=format&fit=crop&w=2000&q=70')">
 <div class="wrap">
 <h1>Journal</h1>
 <p class="lede">Research and practical perspectives on long-term health and wellness.</p>
-</div>
-</section>
-</div>
+</div></section></div>
 <main id="main">
 <section class="band on-cream">
+<div class="wrap center-head"><p class="script">The WellSpring Journal</p><h2>Health insights for women and men</h2><p>Read research-informed articles on preventive care and questions that matter to your health over time.</p></div>
 <div class="wrap posts">
 {% assign unique_posts = site.posts | uniq: 'title' %}
 {% for post in unique_posts %}
 <article class="post-card"><a class="card-link" href="{{ post.url | relative_url }}">
 {% if post.image %}<div class="photo" role="img" aria-label="{{ post.image_alt | default: post.title | escape }}" style="--img:url('{{ post.image | escape }}')"></div>{% endif %}
 <p class="meta">{{ post.date | date: '%B %-d, %Y' }}{% if post.author %} | By {{ post.author | escape }}{% endif %}</p>
-<h3>{{ post.title | escape }}</h3>
-<p class="muted">{{ post.summary | escape }}</p>
+<h3>{{ post.title | escape }}</h3><p class="muted">{{ post.summary | escape }}</p>
 </a></article>
 {% endfor %}
 <article class="post-card"><a class="card-link" href="../journal/womens-health-gap/index.html">
 <div class="photo" role="img" aria-label="A smiling woman in a gray cardigan" style="--img:url('https://images.unsplash.com/photo-1616286608358-0e1b143f7d2f?auto=format&fit=crop&w=1400&q=70')"></div>
-<p class="meta">October 28, 2026. 4 min read</p>
-<h3>The women's health gap starts in the mid-30s</h3>
+<p class="meta">October 28, 2026. 4 min read</p><h3>The women's health gap starts in the mid-30s</h3>
 <p class="muted">Women spend more of their lives in poor health than men, and much of that gap opens in midlife. This post covers the research and how earlier care works.</p>
 </a></article><article class="post-card"><a class="card-link" href="../journal/aging-you-can-see/index.html">
 <div class="photo" role="img" aria-label="A woman in a white sweater with her hand to her face" style="--img:url('https://images.unsplash.com/photo-1728507523243-625ed7c61308?auto=format&fit=crop&w=1400&q=70')"></div>
-<p class="meta">October 28, 2026. 4 min read</p>
-<h3>What visible aging says about your health</h3>
+<p class="meta">October 28, 2026. 4 min read</p><h3>What visible aging says about your health</h3>
 <p class="muted">How old you look can carry information about your health. This post covers the studies and the habits that protect both your skin and your long-term health.</p>
-</a></article></div>
-</section>
+</a></article></div></section>
 <section class="band on-forest tight"><svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,46 C220,88 520,8 760,34 C1000,60 1220,20 1440,42 L1440,80 L0,80 Z"/></svg>
-<div class="wrap cta">
-<p class="script">Get early access</p>
-<h2>Be first to know when we open</h2>
-<p>Join the waitlist for opening dates in Pensacola and Birmingham.</p>
-<a class="btn btn-light" href="../index.html#waitlist">Join the waitlist</a>
-</div>
+<div class="wrap cta"><p class="script">Get early access</p><h2>Be first to know when we open</h2>
+<p>Join the waitlist for updates on our upcoming locations.</p><a class="btn btn-light" href="../index.html#waitlist">Join the waitlist</a></div>
 </section></main>
 <footer class="site-footer"><svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0,30 C260,2 540,70 820,44 C1080,20 1270,60 1440,32 L1440,80 L0,80 Z"/></svg>
 <div class="wrap">
@@ -85,7 +77,7 @@ layout: null
 </div>
 <div>
 <h3>Locations</h3>
-<ul><li>Pensacola, Florida</li><li>Birmingham, Alabama</li><li>Opening soon</li></ul>
+<ul><li>Coming soon</li><li>Pensacola, Florida</li><li>Birmingham, Alabama</li><li>Doral, Florida</li><li>Coral Gables, Florida</li></ul>
 </div>
 <div>
 <h3>Contact</h3>
