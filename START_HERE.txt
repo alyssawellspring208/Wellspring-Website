@@ -1,0 +1,39 @@
+WELLSPRING WEBSITE UPDATE | NOVEMBER 16, 2026
+
+This package updates your EXISTING GitHub Pages website at
+alyssawellspring208/Wellspring-Website.
+
+IMPORTANT: This is an update package, not a complete replacement website.
+Keep all existing website files, images, and folders in GitHub.
+
+HOW TO UPLOAD
+1. Unzip this file on your computer. Do not upload the ZIP itself.
+2. Open the UPLOAD_TO_GITHUB folder. It contains two paths:
+     .github/workflows/wellspring-public-site-update.yml
+     _posts/2026-11-16-mens-health-after-40.md
+3. In your existing GitHub repository, use Add file > Upload files.
+   Upload the contents of UPLOAD_TO_GITHUB, preserving the paths above.
+   If you use a Mac, press Command + Shift + . in Finder to show .github.
+4. Commit the uploaded files to the main branch.
+5. If GitHub Actions are enabled and allowed to write to the repository,
+   the workflow will update existing pages and create a commit.
+   Check the Actions tab and then verify your live website.
+
+WHAT IT CHANGES
+- More inclusive mission and About copy, retaining a women's health emphasis
+- Services hero photo switched to the existing clinical hero image
+- Simplified membership and individual-service pricing; removes full tier details
+- Coming-soon locations updated to include Doral and Coral Gables, Florida
+- Journal introduction updated to cover women's and men's health
+- New original men's health article added in the Journal
+
+REVIEW BEFORE PUBLISHING
+Clinical staff should review the men's health article, service descriptions,
+location wording, and membership information before uploading.
+The REFERENCE_ONLY folder contains the final draft article and copy for review.
+Do not upload REFERENCE_ONLY or START_HERE.txt to the website.
+
+CAVEAT
+GitHub Actions can be restricted by repository settings. If the workflow
+fails, the article file may still appear but the pages will not yet update.
+Check Actions for a green successful run before assuming everything published.
